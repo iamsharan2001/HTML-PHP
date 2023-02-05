@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>program 11</title>
+ </head>
+ <body>
+	<h1>Largest of 3 numbers</h1>
+	<label for="a">Enter Value of a</label>
+	<input type="text" name="" id="a"><br>
+	<label for="b">Enter Value of b</label>
+	<input type="text" name="" id="b"><br>
+	<label for="c">Enter Value of c</label>
+	<input type="text" name="" id="c"><br>
+	<button type="submit" onclick="large()">Result: </button>
+	<h4 id="result"></h4>
+	<script>
+		function large(){
+		var a = parseInt(document.getElementById("a").value);
+		var b = parseInt(document.getElementById("b").value);
+		var c = parseInt(document.getElementById("c").value);
+		
+		
+		if(a > b && a > c){
+		document.getElementById("result").innerHTML = "Largest number is : "+ (a);
+		 }
+		else if(b > c){
+		document.getElementById("result").innerHTML ="Largest number is : "+ (b);
+		}
+		else{
+		document.getElementById("result").innerHTML ="Largest number is : "+ (c);
+		}
+		}
+	</script>
+ </body>
+</html>
